@@ -4,12 +4,12 @@ import skillsData from "@/data/skills.json";
 
 export default function Skills() {
   return (
-    <div className=" min-h-screen my-10 pt-10 mx-5 md:mx-28">
+    <div id="skills" className=" min-h-screen my-10 pt-10 mx-5 md:mx-28">
       <h1 className="text-4xl font-bold text-center">
         tech <span className="text-orange-500"> : </span>{" "}
         <span className="text-blue-600">skills</span>
       </h1>
-      <div className=" flex flex-col gap-6 py-10">
+      <div className=" flex flex-col gap-6 py-20">
         <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
           {skillsData.languages.map((lang) => (
             <h2

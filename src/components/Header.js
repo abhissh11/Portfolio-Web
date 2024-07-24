@@ -23,7 +23,7 @@ export default function Header() {
               About
             </h1>
           </Link>
-          <Link href="/skills">
+          <Link href="#skills">
             <h1 className="text-lg font-semibold px-5 py-1 rounded-md hover:bg-gray-200">
               Skills
             </h1>
@@ -33,13 +33,16 @@ export default function Header() {
               Projects
             </h1>
           </Link>
-          <Link href="/contacts">
+          <Link href="#contacts">
             <h1 className="text-lg font-semibold px-5 py-1 rounded-md hover:bg-gray-200">
               Contacts
             </h1>
           </Link>
-          <Link href="#resume">
-            <h1 className="text-lg font-semibold px-5 py-1 rounded-md hover:bg-gray-200">
+          <Link
+            href="https://drive.google.com/file/d/1Vl5u472CKk3SjJCsBQn-taOuSAmp3Wjf/view"
+            target="_blank"
+          >
+            <h1 className="text-lg text-white font-light px-5 py-1 bg-black rounded-md hover:bg-gray-800">
               Resume
             </h1>
           </Link>
@@ -55,29 +58,47 @@ export default function Header() {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden flex flex-col gap-4 items-center justify-center my-2">
+        <div className="md:hidden flex flex-col gap-4 items-center justify-center pb-4 my-2 shadow-sm">
           <Link href="#about">
-            <h1 className="text-lg font-bold px-5 py-1 rounded-md hover:bg-gray-200">
+            <h1
+              className="text-lg font-bold px-5 py-1 rounded-md hover:bg-gray-200"
+              onClick={toggleMenu}
+            >
               About
             </h1>
           </Link>
           <Link href="#skills">
-            <h1 className="text-lg font-bold px-5 py-1 rounded-md hover:bg-gray-200">
+            <h1
+              className="text-lg font-bold px-5 py-1 rounded-md hover:bg-gray-200"
+              onClick={toggleMenu}
+            >
               Skills
             </h1>
           </Link>
           <Link href="#projects">
-            <h1 className="text-lg font-bold px-5 py-1 rounded-md hover:bg-gray-200">
+            <h1
+              className="text-lg font-bold px-5 py-1 rounded-md hover:bg-gray-200"
+              onClick={toggleMenu}
+            >
               Projects
             </h1>
           </Link>
           <Link href="#contacts">
-            <h1 className="text-lg font-bold px-5 py-1 rounded-md hover:bg-gray-200">
+            <h1
+              className="text-lg font-bold px-5 py-1 rounded-md hover:bg-gray-200"
+              onClick={toggleMenu}
+            >
               Contacts
             </h1>
           </Link>
-          <Link href="#resume">
-            <h1 className="text-lg font-bold px-5 py-1 rounded-md hover:bg-gray-200">
+          <Link
+            href="https://drive.google.com/file/d/1Vl5u472CKk3SjJCsBQn-taOuSAmp3Wjf/view"
+            target="_blank"
+          >
+            <h1
+              className="text-lg font-light text-white px-5 py-1 bg-black rounded-md hover:bg-gray-800"
+              onClick={toggleMenu}
+            >
               Resume
             </h1>
           </Link>
