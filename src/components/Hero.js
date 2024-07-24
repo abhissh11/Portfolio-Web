@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="mx-5 md:mx-28  flex flex-col md:flex-row gap-10 justify-between items-center">
         <div className="flex flex-col gap-0 md:gap-4 items-start">
           <h1 className="text-3xl md:text-4xl font-bold leading-loose">
-            Hi! I'm
+            Hi! I&aposm
           </h1>
           <h1 className="text-blue-600 text-3xl md:text-4xl font-bold leading-loose">
             Abhishek.

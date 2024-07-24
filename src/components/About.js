@@ -7,7 +7,7 @@ export default function About() {
       <div className="py-10 flex items-center justify-center">
         <div className="max-w-xl flex flex-col gap-5">
           <h2 className="text-xl text-gray-600">
-            Hey there, I'm Abhishek, a MERN Fullstack developer hailing from
+            Hey there, I&aposm Abhishek, a MERN Fullstack developer hailing from
             Kolkata India. With a focus on user experience and performance
             optimization, I strive to create seamless digital experiences.
           </h2>
