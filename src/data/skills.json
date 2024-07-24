@@ -1,0 +1,104 @@
+{
+  "languages": [
+    {
+      "id": 1,
+      "name": "C++",
+      "icon": "logos:c-plusplus"
+    },
+    {
+      "id": 2,
+      "name": "JavaScript",
+      "icon": "logos:javascript"
+    },
+
+    {
+      "id": 3,
+      "name": "TypeScript",
+      "icon": "logos:typescript-icon"
+    },
+    {
+      "id": 4,
+      "name": "HTML",
+      "icon": "logos:html-5"
+    },
+    {
+      "id": 5,
+      "name": "Python",
+      "icon": "logos:python"
+    }
+  ],
+  "frameworks": [
+    {
+      "id": 1,
+      "name": "ReactJS",
+      "icon": "logos:react"
+    },
+    {
+      "id": 2,
+      "name": "NextJS",
+      "icon": "skill-icons:nextjs-light"
+    },
+
+    {
+      "id": 3,
+      "name": "NodeJS",
+      "icon": "logos:nodejs-icon"
+    },
+    {
+      "id": 4,
+      "name": "ExpressJS",
+      "icon": "simple-icons:express"
+    },
+    {
+      "id": 5,
+      "name": "Tailwind CSS",
+      "icon": "logos:tailwindcss-icon"
+    }
+  ],
+  "databases": [
+    {
+      "id": 1,
+      "name": "MongoDB",
+      "icon": "skill-icons:mongodb"
+    },
+    {
+      "id": 2,
+      "name": "Postgres",
+      "icon": "logos:postgresql"
+    },
+
+    {
+      "id": 3,
+      "name": "Redis",
+      "icon": "logos:redis"
+    },
+    {
+      "id": 4,
+      "name": "Docker",
+      "icon": "logos:docker-icon"
+    },
+    {
+      "id": 5,
+      "name": "AWS",
+      "icon": "skill-icons:aws-dark"
+    }
+  ],
+  "devTools": [
+    {
+      "id": 1,
+      "name": "Postman",
+      "icon": "logos:postman-icon"
+    },
+    {
+      "id": 2,
+      "name": "Git",
+      "icon": "devicon:git"
+    },
+
+    {
+      "id": 3,
+      "name": "Vercel",
+      "icon": "skill-icons:vercel-dark"
+    }
+  ]
+}

@@ -18,7 +18,7 @@ export default function Header() {
           <Dropdown />
         </div>
         <div className="hidden md:flex flex-row gap-6 items-center">
-          <Link href="/about">
+          <Link href="#about">
             <h1 className="text-lg font-semibold px-5 py-1 rounded-md hover:bg-gray-200">
               About
             </h1>
