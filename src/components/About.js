@@ -12,7 +12,7 @@ export default function About() {
             optimization, I strive to create seamless digital experiences.
           </h2>
           <h2 className="text-lg text-gray-900">
-            Let's connect and create something remarkable!
+            Let&aposs connect and create something remarkable!
           </h2>
         </div>
       </div>
