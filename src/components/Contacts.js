@@ -1,21 +1,16 @@
 import { Icon } from "@iconify/react";
-import {
-  AlignRight,
-  ArrowRight,
-  ArrowRightCircle,
-  MoveUpRight,
-} from "lucide-react";
+import { MoveUpRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 export default function Contacts() {
   return (
-    <div id="contacts" className="min-h-screen mb-5 mx-5 md:mx-28 ">
+    <div id="contacts" className=" mb-8 mx-5 md:mx-28 ">
       <h1 className="text-4xl font-bold text-center">
         connect <span className="text-pink-600"> : </span>
         <span className="text-blue-600">contact</span>
       </h1>
-      <div className="flex flex-col items-center justify-center gap-10 py-20">
+      <div className="flex flex-col items-center justify-center gap-10 py-20 border-b border-gray-300">
         <h2 className="text-3xl font-bold text-center">
           Connect with me on socials :
         </h2>
@@ -65,8 +60,8 @@ export default function Contacts() {
           </Link>
         </h2>
       </div>
-      <p className="text-sm text-gray-500 flex flex-row gap-0 items-center justify-center">
-        Website designed and developed by -
+      <p className="text-sm text-gray-500 flex flex-row gap-0 items-center justify-center pt-4">
+        Website designed & developed by -
         <Link
           href="https://www.linkedin.com/in/abhishekkr-dev/"
           target="_blank"
