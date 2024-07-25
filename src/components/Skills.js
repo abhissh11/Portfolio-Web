@@ -1,16 +1,38 @@
+"use client";
 import { Icon } from "@iconify/react";
 import React from "react";
 import skillsData from "@/data/skills.json";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Skills() {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
   return (
     <div id="skills" className=" min-h-screen my-10 pt-10 mx-5 md:mx-28">
-      <h1 className="text-4xl font-bold text-center">
+      <motion.h1
+        className="text-4xl font-bold text-center"
+        ref={ref}
+        initial={{ scale: 0 }}
+        animate={{ scale: inView ? 1 : 0 }}
+        transition={{ duration: 1 }}
+        style={{ originX: 0.5, originY: 0.5 }}
+      >
         tech <span className="text-orange-500"> : </span>{" "}
         <span className="text-blue-600">skills</span>
-      </h1>
+      </motion.h1>
       <div className=" flex flex-col gap-6 py-20">
-        <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
+        <motion.div
+          className="flex flex-row gap-4 items-center justify-center flex-wrap"
+          ref={ref}
+          initial={{ scale: 0.5 }}
+          animate={{ scale: inView ? 1 : 0.5 }}
+          transition={{ duration: 1 }}
+          style={{ originX: 0.5, originY: 0.5 }}
+        >
           {skillsData.languages.map((lang) => (
             <h2
               key={lang.id}
@@ -21,8 +43,15 @@ export default function Skills() {
               <span>{lang.name}</span>
             </h2>
           ))}
-        </div>
-        <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
+        </motion.div>
+        <motion.div
+          className="flex flex-row gap-4 items-center justify-center flex-wrap"
+          ref={ref}
+          initial={{ scale: 0.5 }}
+          animate={{ scale: inView ? 1 : 0.5 }}
+          transition={{ duration: 1 }}
+          style={{ originX: 0.5, originY: 0.5 }}
+        >
           {skillsData.frameworks.map((frame) => (
             <h2
               key={frame.id}
@@ -33,8 +62,15 @@ export default function Skills() {
               <span>{frame.name}</span>
             </h2>
           ))}
-        </div>
-        <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
+        </motion.div>
+        <motion.div
+          className="flex flex-row gap-4 items-center justify-center flex-wrap"
+          ref={ref}
+          initial={{ scale: 0.5 }}
+          animate={{ scale: inView ? 1 : 0.5 }}
+          transition={{ duration: 1 }}
+          style={{ originX: 0.5, originY: 0.5 }}
+        >
           {skillsData.databases.map((dbs) => (
             <h2
               key={dbs.id}
@@ -45,8 +81,15 @@ export default function Skills() {
               <span>{dbs.name}</span>
             </h2>
           ))}
-        </div>
-        <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
+        </motion.div>
+        <motion.div
+          className="flex flex-row gap-4 items-center justify-center flex-wrap"
+          ref={ref}
+          initial={{ scale: 0.5 }}
+          animate={{ scale: inView ? 1 : 0.5 }}
+          transition={{ duration: 1 }}
+          style={{ originX: 0.5, originY: 0.5 }}
+        >
           {skillsData.devTools.map((devt) => (
             <h2
               key={devt.id}
@@ -57,7 +100,7 @@ export default function Skills() {
               <span>{devt.name}</span>
             </h2>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

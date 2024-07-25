@@ -1,20 +1,49 @@
+"use client";
 import { Icon } from "@iconify/react";
 import { MoveUpRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Contacts() {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
   return (
     <div id="contacts" className=" mb-8 mx-5 md:mx-28 ">
-      <h1 className="text-4xl font-bold text-center">
+      <motion.h1
+        className="text-4xl font-bold text-center"
+        ref={ref}
+        initial={{ scale: 0 }}
+        animate={{ scale: inView ? 1 : 0 }}
+        transition={{ duration: 1 }}
+        style={{ originX: 0.5, originY: 0.5 }}
+      >
         connect <span className="text-pink-600"> : </span>
         <span className="text-blue-600">contact</span>
-      </h1>
+      </motion.h1>
       <div className="flex flex-col items-center justify-center gap-10 py-20 border-b border-gray-300">
-        <h2 className="text-3xl font-bold text-center">
+        <motion.h2
+          className="text-xl font-bold text-center"
+          ref={ref}
+          initial={{ scale: 0 }}
+          animate={{ scale: inView ? 1 : 0 }}
+          transition={{ duration: 1 }}
+          style={{ originX: 0.5, originY: 0.5 }}
+        >
           Connect with me on socials :
-        </h2>
-        <div className="flex flex-row items-center justify-center gap-14 flex-wrap mt-10">
+        </motion.h2>
+        <motion.div
+          className="flex flex-row items-center justify-center gap-14 flex-wrap mt-10"
+          ref={ref}
+          initial={{ scale: 0.5 }}
+          animate={{ scale: inView ? 1 : 0 }}
+          transition={{ duration: 1 }}
+          style={{ originX: 0.5, originY: 0.5 }}
+        >
           <Link
             href="https://www.instagram.com/abhiishekkr/"
             target="_blank"
@@ -49,8 +78,15 @@ export default function Contacts() {
             <Icon icon="uil:github" className="w-8 h-8" />
             <h2 className="text-md font-bold">GitHub</h2>
           </Link>
-        </div>
-        <h2 className="text-md  pt-10 text-center  ">
+        </motion.div>
+        <motion.h2
+          className="text-md  pt-10 text-center  "
+          ref={ref}
+          initial={{ scale: 0 }}
+          animate={{ scale: inView ? 1 : 0 }}
+          transition={{ duration: 1 }}
+          style={{ originX: 0.5, originY: 0.5 }}
+        >
           or, mail me at{" "}
           <Link
             href="mailto:dev.abhishekkr@gmail.com"
@@ -58,7 +94,7 @@ export default function Contacts() {
           >
             dev.abhishekkr@gmail.com
           </Link>
-        </h2>
+        </motion.h2>
       </div>
       <p className="text-sm text-gray-500 flex flex-row gap-0 items-center justify-center pt-4">
         Website designed & developed by -
