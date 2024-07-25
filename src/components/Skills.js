@@ -24,15 +24,15 @@ export default function Skills() {
         tech <span className="text-orange-500"> : </span>{" "}
         <span className="text-blue-600">skills</span>
       </motion.h1>
-      <div className=" flex flex-col gap-6 py-20">
-        <motion.div
-          className="flex flex-row gap-4 items-center justify-center flex-wrap"
-          ref={ref}
-          initial={{ scale: 0.5 }}
-          animate={{ scale: inView ? 1 : 0.5 }}
-          transition={{ duration: 1 }}
-          style={{ originX: 0.5, originY: 0.5 }}
-        >
+      <motion.div
+        className=" flex flex-col gap-6 py-20"
+        ref={ref}
+        initial={{ scale: 0.5 }}
+        animate={{ scale: inView ? 1 : 0.5 }}
+        transition={{ duration: 1 }}
+        style={{ originX: 0.5, originY: 0.5 }}
+      >
+        <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
           {skillsData.languages.map((lang) => (
             <h2
               key={lang.id}
@@ -43,15 +43,8 @@ export default function Skills() {
               <span>{lang.name}</span>
             </h2>
           ))}
-        </motion.div>
-        <motion.div
-          className="flex flex-row gap-4 items-center justify-center flex-wrap"
-          ref={ref}
-          initial={{ scale: 0.5 }}
-          animate={{ scale: inView ? 1 : 0.5 }}
-          transition={{ duration: 1 }}
-          style={{ originX: 0.5, originY: 0.5 }}
-        >
+        </div>
+        <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
           {skillsData.frameworks.map((frame) => (
             <h2
               key={frame.id}
@@ -62,15 +55,8 @@ export default function Skills() {
               <span>{frame.name}</span>
             </h2>
           ))}
-        </motion.div>
-        <motion.div
-          className="flex flex-row gap-4 items-center justify-center flex-wrap"
-          ref={ref}
-          initial={{ scale: 0.5 }}
-          animate={{ scale: inView ? 1 : 0.5 }}
-          transition={{ duration: 1 }}
-          style={{ originX: 0.5, originY: 0.5 }}
-        >
+        </div>
+        <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
           {skillsData.databases.map((dbs) => (
             <h2
               key={dbs.id}
@@ -81,15 +67,8 @@ export default function Skills() {
               <span>{dbs.name}</span>
             </h2>
           ))}
-        </motion.div>
-        <motion.div
-          className="flex flex-row gap-4 items-center justify-center flex-wrap"
-          ref={ref}
-          initial={{ scale: 0.5 }}
-          animate={{ scale: inView ? 1 : 0.5 }}
-          transition={{ duration: 1 }}
-          style={{ originX: 0.5, originY: 0.5 }}
-        >
+        </div>
+        <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
           {skillsData.devTools.map((devt) => (
             <h2
               key={devt.id}
@@ -100,8 +79,8 @@ export default function Skills() {
               <span>{devt.name}</span>
             </h2>
           ))}
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </div>
   );
 }
