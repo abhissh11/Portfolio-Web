@@ -11,7 +11,7 @@ export default function Hero() {
   });
 
   return (
-    <div className="min-h-[90vh] pt-10 flex items-center justify-center">
+    <div className="min-h-[85vh] pt-10 flex items-center justify-center">
       <div className="mx-5 md:mx-28  flex flex-col md:flex-row gap-10 justify-between items-center">
         <motion.div
           className="flex flex-col gap-0 md:gap-4 items-start"
