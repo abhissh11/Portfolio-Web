@@ -30,12 +30,12 @@ export default function About() {
           transition={{ duration: 1 }}
           style={{ originX: 0.5, originY: 0.5 }}
         >
-          <h2 className="text-xl text-gray-600">
+          <h2 className="text-xl text-gray-600 dark:text-gray-400">
             Hey there, I&apos;m Abhishek, a MERN Fullstack developer hailing
             from Kolkata India. With a focus on user experience and performance
             optimization, I strive to create seamless digital experiences.
           </h2>
-          <h2 className="text-xl text-gray-600">
+          <h2 className="text-xl text-gray-600 dark:text-gray-400">
             Let&apos;s connect and create something remarkable!
           </h2>
         </motion.div>

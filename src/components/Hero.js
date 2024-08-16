@@ -33,7 +33,7 @@ export default function Hero() {
           <h1 className="text-3xl md:text-4xl font-bold leading-loose">
             Freelancer.
           </h1>
-          <p className="text-lg text-gray-500">
+          <p className="text-lg text-gray-500 dark:text-gray-400">
             transforming entropy into code & realities..
           </p>
         </motion.div>
@@ -46,7 +46,7 @@ export default function Hero() {
           transition={{ duration: 1 }}
           style={{ originX: 0.5, originY: 0.5 }}
         >
-          <Image src="/hero.jpeg" width={400} height={400} />
+          <Image src="/hero-img.png" width={400} height={400} />
         </motion.div>
       </div>
     </div>

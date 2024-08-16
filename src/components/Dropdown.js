@@ -12,7 +12,9 @@ export default function Dropdown() {
       <div>
         <button
           type="button"
-          className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+          className="inline-flex justify-center w-full rounded-md border border-gray-300 dark:border-gray-500  
+          shadow-sm px-4 py-2 bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-white
+           hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
           id="menu-button"
           aria-expanded="true"
           aria-haspopup="true"
@@ -37,17 +39,17 @@ export default function Dropdown() {
 
       {isOpen && (
         <div
-          className="origin-top-right absolute  md:left-0  md:right-auto mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none "
+          className="origin-top-right absolute  md:left-0  md:right-auto mt-2 w-36 rounded-md shadow-lg bg-white dark:bg-gray-900 dark:text-white ring-1 ring-black ring-opacity-5 focus:outline-none "
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
           tabIndex="-1"
         >
-          <div className="py-1" role="none">
+          <div className="py-1 " role="none ">
             <a
               href="https://github.com/dev-abhishekkr"
               target="_blank"
-              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+              className="text-gray-700 dark:text-gray-400 block px-4 py-2 text-sm hover:bg-gray-100"
               role="menuitem"
               tabIndex="-1"
               id="menu-item-0"
@@ -57,7 +59,7 @@ export default function Dropdown() {
             <a
               href="https://www.linkedin.com/in/abhishekkr-dev/"
               target="_blank"
-              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+              className="text-gray-700 dark:text-gray-400 block px-4 py-2 text-sm hover:bg-gray-100"
               role="menuitem"
               tabIndex="-1"
               id="menu-item-1"
@@ -67,7 +69,7 @@ export default function Dropdown() {
             <a
               href="https://x.com/dev_abhishekkr"
               target="_blank"
-              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+              className="text-gray-700 dark:text-gray-400 block px-4 py-2 text-sm hover:bg-gray-100"
               role="menuitem"
               tabIndex="-1"
               id="menu-item-2"
@@ -77,7 +79,7 @@ export default function Dropdown() {
             <a
               href="mailto:dev.abhishekkr@gmail.com"
               target="_blank"
-              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 overflow-hidden"
+              className="text-gray-700 dark:text-gray-400 block px-4 py-2 text-sm hover:bg-gray-100 overflow-hidden"
               role="menuitem"
               tabIndex="-1"
               id="menu-item-2"

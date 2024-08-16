@@ -47,9 +47,9 @@ export default function Contacts() {
           <Link
             href="https://www.instagram.com/abhiishekkr/"
             target="_blank"
-            className="flex gap-1 items-center py-1  hover:scale-95"
+            className=" flex gap-1 items-center py-1  hover:scale-95"
           >
-            <Icon icon="uil:instagram" className="w-8 h-8" />
+            <Icon icon="uil:instagram" className="dark:text-blue-600 w-8 h-8" />
 
             <h2 className="text-md font-bold">Instagram</h2>
           </Link>
@@ -58,15 +58,18 @@ export default function Contacts() {
             target="_blank"
             className="flex gap-1 items-center py-1 hover:scale-95"
           >
-            <Icon icon="devicon:twitter" className="w-6 h-6" />
-            <h2 className="text-md font-bold">Twitter(X)</h2>
+            <Icon
+              icon="fa6-brands:x-twitter"
+              className=" dark:text-blue-600 w-6 h-6"
+            />
+            <h2 className="text-md font-bold">Twitter ( X ) </h2>
           </Link>
           <Link
             href="https://www.linkedin.com/in/abhishekkr-dev/"
             target="_blank"
             className="flex gap-1 items-center py-1  hover:scale-95"
           >
-            <Icon icon="uil:linkedin" className="w-8 h-8" />
+            <Icon icon="uil:linkedin" className=" dark:text-blue-600 w-8 h-8" />
             <h2 className="text-md font-bold">LinkedIn</h2>
           </Link>
 
@@ -75,7 +78,7 @@ export default function Contacts() {
             target="_blank"
             className="flex gap-1 items-center py-1  hover:scale-95"
           >
-            <Icon icon="uil:github" className="w-8 h-8" />
+            <Icon icon="uil:github" className="dark:text-blue-600 w-8 h-8" />
             <h2 className="text-md font-bold">GitHub</h2>
           </Link>
         </motion.div>
