@@ -47,7 +47,7 @@ export default function Dropdown() {
         >
           <div className="py-1 " role="none ">
             <a
-              href="https://github.com/dev-abhishekkr"
+              href="https://github.com/abhissh11"
               target="_blank"
               className="text-gray-700 dark:text-gray-400 block px-4 py-2 text-sm hover:bg-gray-100"
               role="menuitem"
@@ -67,7 +67,7 @@ export default function Dropdown() {
               LinkedIn
             </a>
             <a
-              href="https://x.com/dev_abhishekkr"
+              href="https://x.com/abhissh_"
               target="_blank"
               className="text-gray-700 dark:text-gray-400 block px-4 py-2 text-sm hover:bg-gray-100"
               role="menuitem"
@@ -77,7 +77,7 @@ export default function Dropdown() {
               Twitter/X
             </a>
             <a
-              href="mailto:dev.abhishekkr@gmail.com"
+              href="mailto:abhishekkr.nsec@gmail.com"
               target="_blank"
               className="text-gray-700 dark:text-gray-400 block px-4 py-2 text-sm hover:bg-gray-100 overflow-hidden"
               role="menuitem"

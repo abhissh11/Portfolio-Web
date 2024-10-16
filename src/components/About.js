@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function About() {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.1,
   });
 
@@ -31,7 +31,7 @@ export default function About() {
           style={{ originX: 0.5, originY: 0.5 }}
         >
           <h2 className="text-xl text-gray-600 dark:text-gray-400">
-            Hey there, I&apos;m Abhishek, a MERN Fullstack developer hailing
+            Hey there, I&apos;m Abhishek Kumar, a MERN Fullstack developer hailing
             from Kolkata India. With a focus on user experience and performance
             optimization, I strive to create seamless digital experiences.
           </h2>

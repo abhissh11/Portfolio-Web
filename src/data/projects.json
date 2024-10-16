@@ -4,7 +4,7 @@
       "projectName": "BlogSphere",
       "projectId": "1",
       "projectImg": "/bw-sphere.png",
-      "projectGithubLink": "https://github.com/dev-abhishekkr/BlogSphere",
+      "projectGithubLink": "https://github.com/abhissh11/BlogSphere",
       "liveLink": "https://blogsphere-h6tw.onrender.com/",
       "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS"],
       "description": "BlogSphere is a platform where admins can share blogs and can manange their interactions."
@@ -13,7 +13,7 @@
       "projectName": "OppNext",
       "projectId": "2",
       "projectImg": "/opnx.png",
-      "projectGithubLink": "https://github.com/dev-abhishekkr/OpportuNext",
+      "projectGithubLink": "https://github.com/abhissh11/OpportuNext",
       "liveLink": "https://opportunext.vercel.app/",
       "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS"],
       "description": "OppurtuNext is a Job-Portal app for developers seeking job and internship opportunities."
@@ -22,7 +22,7 @@
       "projectName": "FundBux",
       "projectId": "3",
       "projectImg": "/fbux.png",
-      "projectGithubLink": "https://github.com/dev-abhishekkr/FundBux",
+      "projectGithubLink": "https://github.com/abhissh11/FundBux",
       "liveLink": "https://fund-bux.vercel.app/",
       "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, RazorPay"],
       "description": "FundBux is a campaigning platform where any users can start a campaign and get contributions."
@@ -31,7 +31,7 @@
       "projectName": "Code Column",
       "projectId": "4",
       "projectImg": "/cc.png",
-      "projectGithubLink": "https://github.com/dev-abhishekkr/Code-Column",
+      "projectGithubLink": "https://github.com/abhissh11/Code-Column",
       "liveLink": "https://code-column.vercel.app/",
       "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS"],
       "description": "Code Column is an Ed-Tech platform where students cam enroll in courses & can book mentorship."
