@@ -11,15 +11,13 @@ export default function Hero() {
   });
 
   return (
-    <div className="min-h-[85vh] pt-10 flex items-center justify-center">
-      <div className="mx-5 md:mx-28  flex flex-col md:flex-row gap-10 justify-between items-center">
+    <div className="min-h-fit my-20 md:my-24 pt-10 flex items-center justify-center">
+      <div className="mx-5 md:mx-28  flex flex-col md:flex-row gap-14 justify-between items-center">
         <motion.div
           className="flex flex-col gap-0 md:gap-4 items-start"
-          ref={ref}
-          initial={{ scale: 0 }}
-          animate={{ scale: inView ? 1 : 0 }}
-          transition={{ duration: 1 }}
-          style={{ originX: 0.5, originY: 0.5 }}
+          data-aos="fade-right"
+          suppressHydrationWarning={true}
+          data-aos-delay="200"
         >
           <h1 className="text-3xl md:text-4xl font-bold leading-loose">
             Hi! I&apos;m
@@ -40,13 +38,16 @@ export default function Hero() {
 
         <motion.div
           className="border-black"
-          ref={ref}
-          initial={{ scale: 0.5 }}
-          animate={{ scale: inView ? 1 : 0 }}
-          transition={{ duration: 1 }}
-          style={{ originX: 0.5, originY: 0.5 }}
+          data-aos="fade-left"
+          suppressHydrationWarning={true}
+          data-aos-delay="200"
         >
-          <Image src="/hero-img.png" width={400} height={400} />
+          <Image
+            src="/cat-code.webp"
+            width={300}
+            height={300}
+            className="rounded-xl overflow-hidden"
+          />
         </motion.div>
       </div>
     </div>

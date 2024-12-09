@@ -16,11 +16,9 @@ export default function Contacts() {
     <div id="contacts" className=" mb-8 mx-5 md:mx-28 ">
       <motion.h1
         className="text-4xl font-bold text-center"
-        ref={ref}
-        initial={{ scale: 0 }}
-        animate={{ scale: inView ? 1 : 0 }}
-        transition={{ duration: 1 }}
-        style={{ originX: 0.5, originY: 0.5 }}
+        data-aos="fade-right"
+        suppressHydrationWarning={true}
+        data-aos-delay="200"
       >
         connect <span className="text-pink-600"> : </span>
         <span className="text-blue-600">contact</span>
@@ -28,28 +26,24 @@ export default function Contacts() {
       <div className="flex flex-col items-center justify-center gap-10 py-20 border-b border-gray-300">
         <motion.h2
           className="text-xl font-bold text-center"
-          ref={ref}
-          initial={{ scale: 0 }}
-          animate={{ scale: inView ? 1 : 0 }}
-          transition={{ duration: 1 }}
-          style={{ originX: 0.5, originY: 0.5 }}
+          data-aos="fade-up"
+          suppressHydrationWarning={true}
+          data-aos-delay="200"
         >
           Connect with me on socials :
         </motion.h2>
         <motion.div
           className="flex flex-row items-center justify-center gap-14 flex-wrap mt-10"
-          ref={ref}
-          initial={{ scale: 0.5 }}
-          animate={{ scale: inView ? 1 : 0 }}
-          transition={{ duration: 1 }}
-          style={{ originX: 0.5, originY: 0.5 }}
+          data-aos="fade-up"
+          suppressHydrationWarning={true}
+          data-aos-delay="200"
         >
           <Link
             href="https://www.instagram.com/abhiishekkr/"
             target="_blank"
             className=" flex gap-1 items-center py-1  hover:scale-95"
           >
-            <Icon icon="uil:instagram" className="dark:text-blue-600 w-8 h-8" />
+            <Icon icon="uil:instagram" className="dark:text-blue-800 w-8 h-8" />
 
             <h2 className="text-md font-bold">Instagram</h2>
           </Link>
@@ -60,7 +54,7 @@ export default function Contacts() {
           >
             <Icon
               icon="fa6-brands:x-twitter"
-              className=" dark:text-blue-600 w-6 h-6"
+              className=" dark:text-blue-800 w-6 h-6"
             />
             <h2 className="text-md font-bold">Twitter ( X ) </h2>
           </Link>
@@ -69,7 +63,7 @@ export default function Contacts() {
             target="_blank"
             className="flex gap-1 items-center py-1  hover:scale-95"
           >
-            <Icon icon="uil:linkedin" className=" dark:text-blue-600 w-8 h-8" />
+            <Icon icon="uil:linkedin" className=" dark:text-blue-800 w-8 h-8" />
             <h2 className="text-md font-bold">LinkedIn</h2>
           </Link>
 
@@ -78,24 +72,22 @@ export default function Contacts() {
             target="_blank"
             className="flex gap-1 items-center py-1  hover:scale-95"
           >
-            <Icon icon="uil:github" className="dark:text-blue-600 w-8 h-8" />
+            <Icon icon="uil:github" className="dark:text-blue-800 w-8 h-8" />
             <h2 className="text-md font-bold">GitHub</h2>
           </Link>
         </motion.div>
         <motion.h2
           className="text-md  pt-10 text-center  "
-          ref={ref}
-          initial={{ scale: 0 }}
-          animate={{ scale: inView ? 1 : 0 }}
-          transition={{ duration: 1 }}
-          style={{ originX: 0.5, originY: 0.5 }}
+          data-aos="fade-up"
+          suppressHydrationWarning={true}
+          data-aos-delay="200"
         >
           or, mail me at{" "}
           <Link
             href="mailto:dev.abhishekkr@gmail.com"
             className="pb-1 font-semibold hover:border-b border-black"
           >
-            dev.abhishekkr@gmail.com
+            abhishekkr.nsec@gmail.com
           </Link>
         </motion.h2>
       </div>

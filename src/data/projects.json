@@ -4,34 +4,35 @@
       "projectName": "BlogSphere",
       "projectId": "1",
       "projectImg": "/bw-sphere.png",
-      "projectGithubLink": "https://github.com/dev-abhishekkr/BlogSphere",
+      "projectGithubLink": "https://github.com/abhissh11/BlogSphere",
       "liveLink": "https://blogsphere-h6tw.onrender.com/",
       "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS"],
       "description": "BlogSphere is a platform where admins can share blogs and can manange their interactions."
     },
     {
-      "projectName": "OppNext",
+      "projectName": "PsycheMaster",
       "projectId": "2",
+      "projectImg": "/fbux.png",
+      "projectGithubLink": "https://github.com/abhissh11/PsycheMaster",
+      "liveLink": "https://PsycheMaster.vercel.app/",
+      "techStack": ["TypeScript, NextJs, MongoDB, Shadcn, JWT"],
+      "description": "PsycheMaster a platform i developed for a psychologist/couselor for focussing their client where they can book sessions."
+    },
+    {
+      "projectName": "OppNext",
+      "projectId": "3",
       "projectImg": "/opnx.png",
-      "projectGithubLink": "https://github.com/dev-abhishekkr/OpportuNext",
+      "projectGithubLink": "https://github.com/abhissh11/OpportuNext",
       "liveLink": "https://opportunext.vercel.app/",
       "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS"],
       "description": "OppurtuNext is a Job-Portal app for developers seeking job and internship opportunities."
     },
-    {
-      "projectName": "FundBux",
-      "projectId": "3",
-      "projectImg": "/fbux.png",
-      "projectGithubLink": "https://github.com/dev-abhishekkr/FundBux",
-      "liveLink": "https://fund-bux.vercel.app/",
-      "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, RazorPay"],
-      "description": "FundBux is a campaigning platform where any users can start a campaign and get contributions."
-    },
+
     {
       "projectName": "Code Column",
       "projectId": "4",
       "projectImg": "/cc.png",
-      "projectGithubLink": "https://github.com/dev-abhishekkr/Code-Column",
+      "projectGithubLink": "https://github.com/abhissh11/Code-Column",
       "liveLink": "https://code-column.vercel.app/",
       "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS"],
       "description": "Code Column is an Ed-Tech platform where students cam enroll in courses & can book mentorship."

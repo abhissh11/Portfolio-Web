@@ -1,6 +1,7 @@
 import { Inter, Roboto, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import AOSProvider from "@/components/AosProvider";
 
 // const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({
@@ -19,8 +20,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto.className}>
         <>
-          <Header />
-          {children}
+          <AOSProvider>
+            <Header />
+            {children}
+          </AOSProvider>
         </>
       </body>
     </html>

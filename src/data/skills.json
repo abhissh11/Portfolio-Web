@@ -72,11 +72,7 @@
       "name": "Redis",
       "icon": "logos:redis"
     },
-    {
-      "id": 4,
-      "name": "Docker",
-      "icon": "logos:docker-icon"
-    },
+
     {
       "id": 5,
       "name": "AWS",

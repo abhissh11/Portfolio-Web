@@ -15,26 +15,20 @@ export default function Skills() {
     <div id="skills" className=" min-h-screen my-10 pt-10 mx-5 md:mx-28">
       <motion.h1
         className="text-4xl font-bold text-center"
-        ref={ref}
-        initial={{ scale: 0 }}
-        animate={{ scale: inView ? 1 : 0 }}
-        transition={{ duration: 1 }}
-        style={{ originX: 0.5, originY: 0.5 }}
+        data-aos="fade-right"
+        suppressHydrationWarning={true}
+        data-aos-delay="200"
       >
         tech <span className="text-orange-500"> : </span>{" "}
         <span className="text-blue-600">skills</span>
       </motion.h1>
-      <motion.div
-        className=" flex flex-col gap-6 py-20"
-        ref={ref}
-        initial={{ scale: 0.5 }}
-        animate={{ scale: inView ? 1 : 0.5 }}
-        transition={{ duration: 1 }}
-        style={{ originX: 0.5, originY: 0.5 }}
-      >
+      <motion.div className=" flex flex-col gap-6 py-20">
         <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
           {skillsData.languages.map((lang) => (
             <h2
+              data-aos="fade-up"
+              suppressHydrationWarning={true}
+              data-aos-delay="200"
               key={lang.id}
               className="flex gap-2 items-center text-md font-bold text-white bg-black md:px-8 px-5 py-2 
           rounded-md hover:bg-gray-900 hover:cursor-pointer hover:scale-95 transition-all delay-100 border-2 border-gray-900"
@@ -47,6 +41,9 @@ export default function Skills() {
         <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
           {skillsData.frameworks.map((frame) => (
             <h2
+              data-aos="fade-up"
+              suppressHydrationWarning={true}
+              data-aos-delay="200"
               key={frame.id}
               className="flex gap-2 items-center text-md font-bold text-white bg-black px-5 md:px-8 py-2 
           rounded-md hover:bg-gray-900 hover:cursor-pointer hover:scale-95 transition-all delay-100 border-2 border-gray-900"
@@ -59,6 +56,9 @@ export default function Skills() {
         <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
           {skillsData.databases.map((dbs) => (
             <h2
+              data-aos="fade-up"
+              suppressHydrationWarning={true}
+              data-aos-delay="200"
               key={dbs.id}
               className="flex gap-2 items-center text-md font-bold text-white bg-black px-5 md:px-8 py-2 
           rounded-md hover:bg-gray-900 hover:cursor-pointer hover:scale-95 transition-all delay-100 border-2 border-gray-900"
@@ -71,6 +71,9 @@ export default function Skills() {
         <div className="flex flex-row gap-4 items-center justify-center flex-wrap">
           {skillsData.devTools.map((devt) => (
             <h2
+              data-aos="fade-up"
+              suppressHydrationWarning={true}
+              data-aos-delay="200"
               key={devt.id}
               className="flex gap-2 items-center text-md font-bold text-white bg-black px-5 md:px-8 py-2 
           rounded-md hover:bg-gray-900 hover:cursor-pointer hover:scale-95 transition-all delay-100 border-2 border-gray-900"

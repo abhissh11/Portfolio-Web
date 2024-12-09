@@ -62,7 +62,7 @@ export default function Header() {
   }, [isMenuOpen]);
 
   return (
-    <div className="sticky top-0 z-50 bg-white dark:bg-gray-800">
+    <div className="fixed w-full top-0 z-50 bg-white dark:bg-gray-800">
       <div className="flex flex-row justify-between items-center px-5 md:px-20 py-5 shadow-md">
         <motion.div
           initial={{ x: "-100vh" }}
@@ -98,11 +98,11 @@ export default function Header() {
             </h1>
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1bTNZZzM-QC-DLjjpGTn2THBJoeo_-jPX/view"
+            href="https://drive.google.com/file/d/1QQH5q_w11DEZGcYS9PR8S7z7LIYvndav/view?usp=sharing"
             target="_blank"
           >
-            <h1 className="text-lg text-white font-light px-5 py-1 bg-black dark:bg-gray-900 rounded-md hover:bg-gray-800 dark:hover:bg-gray-700">
-              Resume
+            <h1 className="text-lg text-white font-light px-4 py-1 bg-black dark:bg-gray-900 rounded-full hover:bg-gray-800 dark:hover:bg-gray-700">
+              CV
             </h1>
           </Link>
         </motion.div>
