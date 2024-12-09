@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function Contacts() {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.1,
   });
 
@@ -48,7 +48,7 @@ export default function Contacts() {
             <h2 className="text-md font-bold">Instagram</h2>
           </Link>
           <Link
-            href="https://x.com/dev_abhishekkr"
+            href="https://x.com/abhishh_"
             target="_blank"
             className="flex gap-1 items-center py-1 hover:scale-95"
           >
@@ -68,7 +68,7 @@ export default function Contacts() {
           </Link>
 
           <Link
-            href="https://github.com/dev-abhishekkr"
+            href="https://github.com/abhissh11"
             target="_blank"
             className="flex gap-1 items-center py-1  hover:scale-95"
           >

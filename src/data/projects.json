@@ -27,7 +27,19 @@
       "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS"],
       "description": "OppurtuNext is a Job-Portal app for developers seeking job and internship opportunities."
     },
+<<<<<<< HEAD
 
+=======
+    {
+      "projectName": "FundBux",
+      "projectId": "3",
+      "projectImg": "/fbux.png",
+      "projectGithubLink": "https://github.com/abhissh11/FundBux",
+      "liveLink": "https://fund-bux.vercel.app/",
+      "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, RazorPay"],
+      "description": "FundBux is a campaigning platform where any users can start a campaign and get contributions."
+    },
+>>>>>>> 8aa2d3552142f068cbdac99612ae989fea0e4657
     {
       "projectName": "Code Column",
       "projectId": "4",
