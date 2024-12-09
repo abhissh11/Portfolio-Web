@@ -28,12 +28,12 @@ export default function Projects() {
             const stack = pj.techStack[0].split(",   ");
             return (
               <div
+                key={pj.projectId}
                 data-aos="fade-up"
                 suppressHydrationWarning={true}
                 data-aos-delay="200"
               >
                 <ProjectCard
-                  key={pj.projectId}
                   tech={stack}
                   desc={pj.description}
                   img={pj.projectImg}

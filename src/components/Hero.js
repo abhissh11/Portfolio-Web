@@ -44,6 +44,7 @@ export default function Hero() {
         >
           <Image
             src="/cat-code.webp"
+            alt="Cat-Crunch-Coding"
             width={300}
             height={300}
             className="rounded-xl overflow-hidden"
