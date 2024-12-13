@@ -68,12 +68,6 @@
     },
 
     {
-      "id": 3,
-      "name": "Redis",
-      "icon": "logos:redis"
-    },
-
-    {
       "id": 5,
       "name": "AWS",
       "icon": "skill-icons:aws-dark"
@@ -89,12 +83,6 @@
       "id": 2,
       "name": "Git",
       "icon": "devicon:git"
-    },
-
-    {
-      "id": 3,
-      "name": "Vercel",
-      "icon": "skill-icons:vercel-dark"
     }
   ]
 }

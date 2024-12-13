@@ -14,15 +14,6 @@ export default function Contacts() {
 
   return (
     <div id="contacts" className=" mb-8 mx-5 md:mx-28 ">
-      <motion.h1
-        className="text-4xl font-bold text-center"
-        data-aos="fade-right"
-        suppressHydrationWarning={true}
-        data-aos-delay="200"
-      >
-        connect <span className="text-pink-600"> : </span>
-        <span className="text-blue-600">contact</span>
-      </motion.h1>
       <div className="flex flex-col items-center justify-center gap-10 py-20 border-b border-gray-300">
         <motion.h2
           className="text-xl font-bold text-center"
@@ -30,7 +21,8 @@ export default function Contacts() {
           suppressHydrationWarning={true}
           data-aos-delay="200"
         >
-          Connect with me on socials :
+          <span className="text-blue-600 text-2xl font-bold">Connect </span>
+          with me on socials :
         </motion.h2>
         <motion.div
           className="flex flex-row items-center justify-center gap-14 flex-wrap mt-10"

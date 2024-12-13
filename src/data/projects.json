@@ -28,13 +28,15 @@
       "description": "OppurtuNext is a Job-Portal app for developers seeking job and internship opportunities."
     },
     {
-      "projectName": "Code Column",
+      "projectName": "More Projects",
       "projectId": "4",
       "projectImg": "/cc.png",
-      "projectGithubLink": "https://github.com/abhissh11/Code-Column",
-      "liveLink": "https://code-column.vercel.app/",
-      "techStack": ["ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS"],
-      "description": "Code Column is an Ed-Tech platform where students cam enroll in courses & can book mentorship."
+      "projectGithubLink": "https://github.com/abhissh11/",
+      "liveLink": "https://github.com/abhissh11/",
+      "techStack": [
+        "JS, TS, ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS"
+      ],
+      "description": "See more of my work/projects on github. want to hire or collaborate? connect with me on email."
     }
   ]
 }

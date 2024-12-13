@@ -10,7 +10,7 @@ export default function ProjectCard({ tech, desc, live, repo, name, img }) {
     >
       <div className="flex flex-col p-4 justify-evenly md:space-y-2  rounded-md">
         <div className="flex flex-row items-center py-1 gap-2 justify-between">
-          <h1 className="text-md font-semibold text-blue-600">{name}</h1>
+          <h1 className="text-base font-bold text-black">{name}</h1>
           <div className="flex gap-2">
             <Link href={repo} target="_blank">
               <Icon

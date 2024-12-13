@@ -12,8 +12,8 @@ export default function Dropdown() {
       <div>
         <button
           type="button"
-          className="inline-flex justify-center w-full rounded-md border border-gray-300 dark:border-gray-500  
-          shadow-sm px-4 py-2 bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-white
+          className="inline-flex justify-center w-full rounded-md border border-gray-300 dark:border-gray-800  
+          shadow-sm px-4 py-2 bg-white dark:bg-gray-900 text-sm font-medium text-gray-700 dark:text-white
            hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
           id="menu-button"
           aria-expanded="true"
