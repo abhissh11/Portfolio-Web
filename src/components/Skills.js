@@ -12,7 +12,7 @@ export default function Skills() {
   });
 
   return (
-    <div id="skills" className=" min-h-screen my-10 pt-10 mx-5 md:mx-28">
+    <div id="skills" className=" min-h-fit my-10 pt-10 mx-5 md:mx-28">
       <motion.h1
         className="text-4xl font-bold text-center"
         data-aos="fade-right"

@@ -12,7 +12,7 @@ export default function Projects() {
   });
 
   return (
-    <div id="projects" className="min-h-screen mb-20  mx-5 md:mx-28">
+    <div id="projects" className="min-h-fit mb-20  mx-5 md:mx-28">
       <motion.h1
         className="text-4xl font-bold text-center"
         data-aos="fade-right"
