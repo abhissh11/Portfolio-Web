@@ -1,98 +1,59 @@
-"use client";
-import { Icon } from "@iconify/react";
-import { MoveUpRight } from "lucide-react";
-import Link from "next/link";
+import { Hash, Linkedin, Mail, Phone, X } from "lucide-react";
 import React from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import ContactForm from "./ContactForm";
 
 export default function Contacts() {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
-    <div id="contacts" className=" mb-8 mx-5 md:mx-28 ">
-      <div className="flex flex-col items-center justify-center gap-10 py-20 border-b border-gray-300">
-        <motion.h2
-          className="text-xl font-bold text-center"
-          data-aos="fade-up"
-          suppressHydrationWarning={true}
-          data-aos-delay="200"
-        >
-          <span className="text-blue-600 text-2xl font-bold">Connect </span>
-          with me on socials :
-        </motion.h2>
-        <motion.div
-          className="flex flex-row items-center justify-center gap-14 flex-wrap mt-10"
-          data-aos="fade-up"
-          suppressHydrationWarning={true}
-          data-aos-delay="200"
-        >
-          <Link
-            href="https://www.instagram.com/abhiishekkr/"
-            target="_blank"
-            className=" flex gap-1 items-center py-1  hover:text-slate-200"
-          >
-            <Icon
-              icon="uil:instagram"
-              className="dark:text-indigo-800 w-8 h-8"
-            />
-
-            <h2 className="text-md font-bold">Instagram</h2>
-          </Link>
-          <Link
-            href="https://x.com/abhishh_"
-            target="_blank"
-            className="flex gap-1 items-center py-1 hover:text-slate-200"
-          >
-            <Icon
-              icon="fa6-brands:x-twitter"
-              className=" dark:text-indigo-800 w-6 h-6"
-            />
-            <h2 className="text-md font-bold">Twitter / X </h2>
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/abhishekkr-dev/"
-            target="_blank"
-            className="flex gap-1 items-center py-1  hover:text-slate-200"
-          >
-            <Icon
-              icon="uil:linkedin"
-              className=" dark:text-indigo-800 w-8 h-8"
-            />
-            <h2 className="text-md font-bold">LinkedIn</h2>
-          </Link>
-        </motion.div>
-        <motion.h2
-          className="text-md  pt-10 text-center  "
-          data-aos="fade-up"
-          suppressHydrationWarning={true}
-          data-aos-delay="200"
-        >
-          or, mail me at{" "}
-          <Link
-            href="mailto:dev.abhishekkr@gmail.com"
-            className="pb-1 font-semibold hover:border-b border-black"
-          >
-            abhishekkr.nsec@gmail.com
-          </Link>
-        </motion.h2>
+    <div
+      id="contact"
+      className="h-fit py-20 px-6 md:px-20 flex flex-col gap-16 justify-center items-center"
+    >
+      <div className="flex flex-col gap-4 items-center justify-center">
+        <h1 className="text-center text-3xl tracking-wide font-bold">
+          Get in Touch
+        </h1>
+        <p className="text-lg font-normal text-gray-700 text-center">
+          Let's discuss your project and bring your ideas to life
+        </p>
       </div>
-      <p className="text-sm text-gray-500 flex flex-row gap-0 items-center justify-center pt-4">
-        Website designed & developed by -
-        <Link
-          href="https://www.linkedin.com/in/abhishekkr-dev/"
-          target="_blank"
-          className="text-center flex flex-row"
-        >
-          <span className="text-blue-500 hover:underline">Abhishek</span>
-          <span className="text-blue-500 hover:scale-110">
-            <MoveUpRight size={20} />
-          </span>
-        </Link>
-      </p>
+      <div className="flex md:flex-row flex-col gap-20 items-center w-full justify-around">
+        <div className="flex flex-col gap-4 justify-center items-start">
+          <div className="flex gap-4 items-center">
+            <p className="bg-blue-200 rounded-full">
+              <Linkedin size={44} className=" p-2" />
+            </p>
+            <div className="flex flex-col gap-1">
+              <p className="text-base font-semibold">Linkedin</p>
+              <p className="text-sm font-normal text-gray-700">
+                abhishekkr-dev
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-center">
+            <p className="bg-blue-200 rounded-full">
+              <Mail size={44} className=" p-2" />
+            </p>
+            <div className="flex flex-col gap-1">
+              <p className="text-base font-semibold">Email</p>
+              <p className="text-sm font-normal text-gray-700">
+                abhishekkr.ssh@gmail.com
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-3 items-center">
+            <p className="bg-blue-200 rounded-full">
+              <Hash size={44} className=" p-2" />
+            </p>
+            <div className="flex flex-col gap-1">
+              <p className="text-base font-semibold">X [Twitter]</p>
+              <p className="text-sm font-normal text-gray-700">abhissh11</p>
+            </div>
+          </div>
+        </div>
+        <div className="w-1/2 flex items-end">
+          <ContactForm />
+        </div>
+      </div>
     </div>
   );
 }
