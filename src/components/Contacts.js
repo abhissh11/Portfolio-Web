@@ -13,7 +13,7 @@ export default function Contacts() {
           Get in Touch
         </h1>
         <p className="text-lg font-normal text-gray-700 text-center">
-          Let's discuss your project and bring your ideas to life
+          Let&apos;s discuss your project and bring your ideas to life
         </p>
       </div>
       <div className="flex md:flex-row flex-col gap-20 items-center w-full justify-around">
