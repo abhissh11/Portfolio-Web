@@ -1,59 +1,77 @@
 "use client";
 import { Menu } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Header() {
-  const [isMenuOpen, setisMenuopen] = useState(false);
-  const navItems = ["Home", "About", "Skills", "Projects", "Work", "Contact"];
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleMenuClick = () => {
-    setisMenuopen(!isMenuOpen);
-  };
+  const navItems = [
+    { item: "Home", link: "#home" },
+    { item: "About", link: "#about" },
+    { item: "Skills", link: "#skills" },
+    { item: "Projects", link: "#projects" },
+    { item: "Work", link: "#experience" },
+    { item: "Contact", link: "#contact" },
+  ];
+
+  const handleMenuClick = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <>
-      <div className="fixed w-full z-50 px-6 md:px-12 py-2 bg-base  flex items-center justify-between">
-        <div className="">
-          <button className="px-4 py-2 rounded text-white text-base font-semibold bg-black">
-            abhissh11
-          </button>
+      {/* Header */}
+      <div className="fixed w-full z-50 px-6 md:px-12 py-4 bg-base flex items-center justify-between">
+        {/* Logo */}
+        <div>
+          <Link href="#home">
+            <button className="px-4 py-2 rounded text-white text-base font-semibold bg-chase">
+              abhissh11
+            </button>
+          </Link>
         </div>
-        <div className=" ">
-          {/* on large screen  */}
-          <div className="hidden md:block">
-            <ul className="flex justify-center items-center gap-8 ">
-              {navItems.map((item, index) => (
-                <li
-                  key={index}
-                  className="text-base font-light text-white hover:text-blue-600 cursor-pointer"
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:block">
+          <ul className="flex justify-center items-center gap-8">
+            {navItems.map((nav, index) => (
+              <li key={index}>
+                <Link
+                  href={nav.link}
+                  className="text-base font-light text-white hover:text-blue-500 transition"
                 >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <button
-            className="text-white text-lg font-semibold bg-black rounded p-2 md:hidden"
-            onClick={handleMenuClick}
-          >
-            <Menu />
-          </button>
+                  {nav.item}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="text-white text-lg font-semibold bg-gray-800 rounded p-2 md:hidden"
+          onClick={handleMenuClick}
+          aria-label="Toggle Menu"
+        >
+          <Menu />
+        </button>
       </div>
-      {/* on small screen  */}
+
+      {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="absolute px-20 py-10 top-16 bg-gray-900 w-2/3 h-svh md:hidden">
-          <div className="md:hidden">
-            <ul className="flex flex-col gap-8">
-              {navItems.map((item, index) => (
-                <li
-                  key={index}
-                  className="text-base font-light text-gray-100 hover:text-blue-600 cursor-pointer"
+        <div className="fixed top-0 left-0 w-full h-screen bg-gray-900 z-40 md:hidden">
+          <ul className="flex flex-col items-center justify-center h-full space-y-6">
+            {navItems.map((nav, index) => (
+              <li key={index}>
+                <Link
+                  href={nav.link}
+                  className="text-lg font-light text-gray-100 hover:text-blue-500 transition"
+                  onClick={() => setIsMenuOpen(false)} // Close menu after clicking a link
                 >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+                  {nav.item}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </>

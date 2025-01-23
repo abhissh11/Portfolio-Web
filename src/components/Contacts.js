@@ -1,6 +1,7 @@
 import { Hash, Linkedin, Mail, Phone, X } from "lucide-react";
 import React from "react";
 import ContactForm from "./ContactForm";
+import Link from "next/link";
 
 export default function Contacts() {
   return (
@@ -24,9 +25,14 @@ export default function Contacts() {
             </p>
             <div className="flex flex-col gap-1">
               <p className="text-base font-semibold">Linkedin</p>
-              <p className="text-sm font-normal text-gray-700">
-                abhishekkr-dev
-              </p>
+              <Link
+                href="https://www.linkedin.com/in/abhishekkr-dev/"
+                target="_blank"
+              >
+                <p className="text-sm font-normal text-gray-700 hover:text-gray-800 transition-all hover:-translate-y-1">
+                  abhishekkr-dev
+                </p>
+              </Link>
             </div>
           </div>
           <div className="flex gap-4 items-center">
@@ -35,9 +41,11 @@ export default function Contacts() {
             </p>
             <div className="flex flex-col gap-1">
               <p className="text-base font-semibold">Email</p>
-              <p className="text-sm font-normal text-gray-700">
-                abhishekkr.ssh@gmail.com
-              </p>
+              <Link href="mailto:abhishekkr.ssh@gmail.com" target="_blank">
+                <p className="text-sm font-normal text-gray-700 hover:text-gray-800 transition-all hover:-translate-y-1">
+                  abhishekkr.ssh@gmail.com
+                </p>
+              </Link>
             </div>
           </div>
           <div className="flex gap-3 items-center">
@@ -46,11 +54,15 @@ export default function Contacts() {
             </p>
             <div className="flex flex-col gap-1">
               <p className="text-base font-semibold">X [Twitter]</p>
-              <p className="text-sm font-normal text-gray-700">abhissh11</p>
+              <Link href="https://x.com/abhissh11" target="_blank">
+                <p className="text-sm font-normal text-gray-700 hover:text-gray-800 transition-all hover:-translate-y-1">
+                  abhissh11
+                </p>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex items-end">
+        <div className="md:w-1/2 w-full flex items-end px-4">
           <ContactForm />
         </div>
       </div>
