@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Inter, Roboto, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
           <AOSProvider>
             <Header />
             {children}
+            <Analytics />
             <Footer />
           </AOSProvider>
         </>
