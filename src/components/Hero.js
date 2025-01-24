@@ -9,7 +9,7 @@ export default function Hero() {
     >
       <div className="flex flex-col gap-4 justify-center items-center">
         <h1 className="text-6xl text-center font-extrabold tracking-wide text-white">
-          Full Stack Developer
+          Fullstack Developer
         </h1>
         <p className="text-xl text-center font-normal text-gray-400 tracking-wide">
           transforming entropy into code & realities
@@ -21,9 +21,9 @@ export default function Hero() {
             Hire Me
           </button>
         </Link>
-        <Link href="#projects">
+        <Link href="/blogs">
           <button className="text-base font-normal text-gray-100 border border-gray-500 rounded-lg px-6 py-3 hover:text-gray-300">
-            View More
+            Explore Blogs
           </button>
         </Link>
       </div>

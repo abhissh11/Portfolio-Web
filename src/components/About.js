@@ -5,7 +5,7 @@ export default function About() {
     {
       id: 1,
       title: "Frontend Development",
-      description: "Expert in React, Vue.js, and modern CSS frameworks",
+      description: "Expert in React, Next.js, and modern CSS frameworks",
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ export default function About() {
     {
       id: 3,
       title: "Cloud Services",
-      description: "Experienced with AWS, Azure, and DevOps practices",
+      description: "Experienced with AWS and DevOps practices",
     },
   ];
   return (
@@ -23,10 +23,10 @@ export default function About() {
       <div className="p-6 md:p-20 flex flex-col gap-4 md:gap-8 w-full md:w-1/2">
         <h1 className="text-3xl font-bold tracking-wide">About Me</h1>
         <p className="text-base text-gray-700 font-normal">
-          Hi! I&apos;m a passionate Full Stack Developer with expertise in
-          building scalable web applications. With 1+ years of experience in
-          software development, I specialize in creating elegant solutions to
-          complex problems.
+          Hi! I&apos;m Abhishek Kumar a curious Fullstack Developer with
+          expertise in building scalable web applications. With 1+ years of
+          experience in software development, I specialize in creating elegant
+          solutions to complex problems.
         </p>
         <p className="text-base text-gray-700 font-normal">
           My journey in software development started with a deep curiosity for

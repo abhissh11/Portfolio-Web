@@ -45,7 +45,7 @@ export default function Projects() {
           Featured Projects
         </h1>
         <p className="text-lg font-normal text-gray-700 text-center">
-          Showcasing my best work in web development
+          Showcasing some of my work in web development
         </p>
       </div>
       <div className="mt-6 w-full grid gap-14 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center items-stretch">
