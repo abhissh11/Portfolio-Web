@@ -16,13 +16,13 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "PsycheMaster",
-      img: "/psyche.png",
-      link: "https://PsycheMaster.vercel.app/",
-      github: "https://github.com/abhissh11/psycheMaster/",
+      title: "deVerse",
+      img: "/deverse.png",
+      link: "https://deverse-chi.vercel.app/",
+      github: "https://github.com/abhissh11/devrex",
       stack: ["TypeScript, NextJS, MongoDB, Tailwind CSS, jwt"],
       description:
-        "PsycheMaster a platform i developed for a psychologist/couselor for focussing their client where they can book sessions.",
+        "deVerse is a one-stop-platform made for developers. They can find various resources from the internet. Also they can interact in community section.",
     },
     {
       id: 3,
